@@ -1,0 +1,84 @@
+name: Continuous integration
+
+on:
+  push:
+    branches: [main, development]
+  pull_request:
+    branches: [main, development]
+
+jobs:
+  install:
+    name: Install
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Format
+        run: yarn run format:check
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Lint
+        run: yarn run lint:check
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [format, lint]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn run build
