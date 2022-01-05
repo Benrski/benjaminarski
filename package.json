@@ -23,7 +23,7 @@
     "eslint": "^7.31.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "prettier": "^2.5.1",
-    "typescript": "^4.3.5",
+    "typescript": "^4.5.4",
     "vite": "^2.7.10",
     "vite-plugin-windicss": "^1.6.1",
     "windicss": "^3.1.5"
