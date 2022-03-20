@@ -4,10 +4,10 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <section>
+    <section className="h-screen flex items-center justify-center">
       <div>
-        <p>Hi there 👋</p>
-        <p>I&apos;m Benjamin Minarski</p>
+        <p className="text-3xl">Hi there 👋</p>
+        <p className="text-6xl">I&apos;m Benjamin Minarski</p>
       </div>
     </section>
   </React.StrictMode>,
