@@ -1,11 +1,10 @@
 import React, { FunctionComponent } from 'react';
-import { animated, config, useChain, useSpring, useSpringRef } from 'react-spring';
+import { animated, useChain, useSpring, useSpringRef } from 'react-spring';
 
 export const App: FunctionComponent = () => {
   const greetingSpringRef = useSpringRef();
   const greetingSpring = useSpring({
     ref: greetingSpringRef,
-    config: config.slow,
     from: { opacity: 0 },
     to: { opacity: 1 },
   });
@@ -28,7 +27,6 @@ export const App: FunctionComponent = () => {
   const whatSpringRef = useSpringRef();
   const whatSpring = useSpring({
     ref: whatSpringRef,
-    config: config.slow,
     from: { opacity: 0, y: '-50%' },
     to: { opacity: 1, y: '0%' },
   });
@@ -36,12 +34,14 @@ export const App: FunctionComponent = () => {
   const containerSpringRef = useSpringRef();
   const containerSpring = useSpring({
     ref: containerSpringRef,
-    config: config.slow,
-    from: { y: '36%' },
+    from: { y: '35%' },
     to: { y: '0%' },
   });
 
-  useChain([greetingSpringRef, nameSpringRef, whatSpringRef, containerSpringRef], [1, 3, 4, 4]);
+  useChain(
+    [greetingSpringRef, nameSpringRef, whatSpringRef, containerSpringRef],
+    [1, 1.7, 2.4, 2.4]
+  );
 
   return (
     <section className="flex h-screen items-center justify-center p-8 dark:bg-neutral-900 dark:text-white">
