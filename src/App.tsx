@@ -38,10 +38,7 @@ export const App: FunctionComponent = () => {
     to: { y: '0%' },
   });
 
-  useChain(
-    [greetingSpringRef, nameSpringRef, whatSpringRef, containerSpringRef],
-    [1, 1.7, 2.4, 2.4]
-  );
+  useChain([greetingSpringRef, nameSpringRef, whatSpringRef, containerSpringRef], [1, 2, 3, 3]);
 
   return (
     <section className="flex h-screen items-center justify-center p-8 dark:bg-neutral-900 dark:text-white">
