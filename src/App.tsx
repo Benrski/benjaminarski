@@ -64,7 +64,7 @@ export const App: FunctionComponent = () => {
         </animated.p>
 
         <animated.p style={whatSpring} className="text-3xl md:text-4xl lg:text-5xl">
-          and I love building things 💻
+          and I&apos;m a person 🤖
         </animated.p>
       </animated.div>
     </section>
