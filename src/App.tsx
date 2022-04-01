@@ -20,14 +20,14 @@ export const App: FunctionComponent = () => {
   const whatSpringRef = useSpringRef();
   const whatSpring = useSpring({
     ref: whatSpringRef,
-    from: { opacity: 0, y: '-50%' },
+    from: { opacity: 0, y: '-140%' },
     to: { opacity: 1, y: '0%' },
   });
 
   const containerSpringRef = useSpringRef();
   const containerSpring = useSpring({
     ref: containerSpringRef,
-    from: { y: '35%' },
+    from: { y: '15%' },
     to: { y: '0%' },
   });
 
