@@ -8,7 +8,6 @@ export const WavingHand: FunctionComponent = () => {
     from: { rotate: 0 },
     rotate: 1,
     transformOrigin: '75% 75%',
-    immediate: true,
   });
 
   return (
