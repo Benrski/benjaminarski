@@ -1,7 +1,6 @@
 import { animated, useSpring } from '@react-spring/web';
-import React, { FunctionComponent } from 'react';
 
-export const WavingHand: FunctionComponent = () => {
+export function WavingHand() {
   const spring = useSpring({
     config: { duration: 2000 },
     loop: true,
@@ -24,4 +23,4 @@ export const WavingHand: FunctionComponent = () => {
       👋
     </animated.span>
   );
-};
+}
