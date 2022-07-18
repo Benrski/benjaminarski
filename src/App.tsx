@@ -1,8 +1,7 @@
 import { animated, useChain, useSpring, useSpringRef } from '@react-spring/web';
-import React, { FunctionComponent } from 'react';
 import { WavingHand } from './components/WavingHand';
 
-export const App: FunctionComponent = () => {
+export function App() {
   const greetingSpringRef = useSpringRef();
   const greetingSpring = useSpring({
     ref: greetingSpringRef,
@@ -50,4 +49,4 @@ export const App: FunctionComponent = () => {
       </animated.div>
     </section>
   );
-};
+}
