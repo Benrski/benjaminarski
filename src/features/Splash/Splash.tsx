@@ -8,7 +8,7 @@ export const STEPS: StepConfig[] = [
   { Component: GreetingStep, props: { delay: 500 } },
 ];
 
-export function Intro() {
+export function Splash() {
   const [stepIndex, setStepIndex] = useState(0);
   const { Component: Step, props: stepProps } = useMemo(() => STEPS[stepIndex], [stepIndex]);
 

@@ -26,6 +26,8 @@ export function LogoStep({ delay = 0, onRest }: StepProps) {
     <animated.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 256"
+      width="50vmin"
+      height="50vmin"
       className="overflow-visible fill-current"
       style={svgSpring}
     >
