@@ -3,9 +3,9 @@ import type { StepProps } from '../../types';
 import { PATHS_PROPS } from './constants';
 
 export function LogoStep({ delay = 0, onRest }: StepProps) {
-  const lastPathSpringRef = useSpringRef();
+  const pathsSpringsRef = useSpringRef();
   const [pathsSprings] = useSprings(PATHS_PROPS.length, (i) => ({
-    ref: lastPathSpringRef,
+    ref: pathsSpringsRef,
     config: { tension: 1000, friction: 100 },
     delay: i * 100 + delay,
     ...PATHS_PROPS[i],
@@ -20,7 +20,7 @@ export function LogoStep({ delay = 0, onRest }: StepProps) {
     onRest,
   });
 
-  useChain([lastPathSpringRef, svgSpringRef]);
+  useChain([pathsSpringsRef, svgSpringRef]);
 
   return (
     <animated.svg
