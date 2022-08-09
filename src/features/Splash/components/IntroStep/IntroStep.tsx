@@ -3,7 +3,7 @@ import { useState } from 'react';
 import type { StepProps } from '../../types';
 import { WavingHand } from '../WavingHand';
 
-export function GreetingStep({ delay = 0, onRest }: StepProps) {
+export function IntroStep({ delay = 0, onRest }: StepProps) {
   const [wavingHand, setWavingHand] = useState(false);
 
   const greetingSpring = useSpring({

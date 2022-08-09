@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
-import { GreetingStep } from './components/GreetingStep';
+import { IntroStep } from './components/IntroStep';
 import { LogoStep } from './components/LogoStep';
 import type { StepConfig } from './types';
 
 export const STEPS: StepConfig[] = [
   { Component: LogoStep, props: { delay: 1000 } },
-  { Component: GreetingStep, props: { delay: 500 } },
+  { Component: IntroStep, props: { delay: 500 } },
 ];
 
 export function Splash() {
