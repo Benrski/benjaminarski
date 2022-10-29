@@ -1,12 +1,15 @@
 import { animated, useSpring } from '@react-spring/web';
+import type { WavingHandProps } from './types';
 
-export function WavingHand() {
+export function WavingHand({ delay, pause }: WavingHandProps) {
   const spring = useSpring({
     config: { duration: 2000 },
     loop: true,
     from: { rotate: 0 },
     rotate: 1,
     transformOrigin: '75% 75%',
+    delay,
+    pause,
   });
 
   return (
