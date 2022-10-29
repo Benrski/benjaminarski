@@ -1,6 +1,7 @@
 {
   "name": "benjaminarski",
   "version": "0.0.0",
+  "private": true,
   "description": "Personal website",
   "license": "MIT",
   "scripts": {
@@ -8,9 +9,9 @@
     "dev": "vite",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
+    "postinstall": "husky install",
     "lint:check": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "prepare": "husky install",
     "preview": "vite preview"
   },
   "dependencies": {
