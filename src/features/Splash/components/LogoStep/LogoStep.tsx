@@ -7,7 +7,7 @@ export function LogoStep({ delay = 0, onRest }: StepProps) {
   const [pathsSprings] = useSprings(PATHS_PROPS.length, (i) => ({
     ref: pathsSpringsRef,
     config: { tension: 1000, friction: 100 },
-    delay: i * 100 + delay,
+    delay: i * 150 + delay,
     ...PATHS_PROPS[i],
   }));
 
