@@ -1778,10 +1778,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.7":
-  version: 18.11.7
-  resolution: "@types/node@npm:18.11.7"
-  checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
+"@types/node@npm:^18.11.17":
+  version: 18.11.17
+  resolution: "@types/node@npm:18.11.17"
+  checksum: 1933afd068d5c75c068c6c4df6d10edb3b0b2bb6503d544e2f0496ac007c90596e6a5e284a8ef032451bc16f871b7e46719d7d2bea60e9b25d13a77d52161cac
   languageName: node
   linkType: hard
 
@@ -2361,7 +2361,7 @@ __metadata:
   dependencies:
     "@react-spring/web": ^9.5.5
     "@reduxjs/toolkit": ^1.8.6
-    "@types/node": ^18.11.7
+    "@types/node": ^18.11.17
     "@types/react": ^18.0.24
     "@types/react-dom": ^18.0.8
     "@vitejs/plugin-react": ^2.2.0
