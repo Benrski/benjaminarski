@@ -1,6 +1,6 @@
 import { animated, useSpring } from '@react-spring/web';
 import { useState } from 'react';
-import { WavingHand } from '../../../../components/WavingHand';
+import { WavingHand } from '../../../WavingHand';
 import type { StepProps } from '../../types';
 
 export function IntroStep({ delay = 0, onRest }: StepProps) {
