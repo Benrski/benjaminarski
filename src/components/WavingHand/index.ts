@@ -1,1 +1,0 @@
-export { WavingHand } from './WavingHand';
