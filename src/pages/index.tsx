@@ -1,5 +1,6 @@
-import { Splash } from '@/components/Splash';
 import Head from 'next/head';
+
+import { Splash } from '@/components/Splash';
 
 export default function Home() {
   return (

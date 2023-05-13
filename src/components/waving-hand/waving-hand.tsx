@@ -1,4 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
+
 import type { WavingHandProps } from './types';
 
 export function WavingHand({ delay, pause }: WavingHandProps) {

@@ -1,4 +1,5 @@
 import { animated, useChain, useSpring, useSpringRef, useSprings } from '@react-spring/web';
+
 import type { StepProps } from '../../types';
 import { PATHS_PROPS } from './constants';
 

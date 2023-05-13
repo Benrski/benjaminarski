@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
+
 import { IntroStep } from './components/IntroStep';
 import { LogoStep } from './components/LogoStep';
 import type { StepConfig } from './types';
@@ -10,7 +11,7 @@ export const STEPS: StepConfig[] = [
 
 export function Splash() {
   const [stepIndex, setStepIndex] = useState(0);
-  const { Component: Step, props: stepProps } = useMemo(() => STEPS[stepIndex], [stepIndex]);
+  const { Component: Step, props: stepProps } = STEPS[stepIndex];
 
   const handleStepRest = () => {
     const nextStepIndex = stepIndex + 1;
