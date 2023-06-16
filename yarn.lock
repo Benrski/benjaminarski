@@ -160,10 +160,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:13.4.2":
-  version: 13.4.2
-  resolution: "@next/font@npm:13.4.2"
-  checksum: c7579b3f76028395592851e36010e17dda562d8110e82f6273a1fbef03dd431333441d55dfc1e55e4c51c0a22357675dd5b0c55da5437b38be14dbc0b15b84b7
+"@next/font@npm:13.4.6":
+  version: 13.4.6
+  resolution: "@next/font@npm:13.4.6"
+  checksum: 9c75c145d8002b4031335a6d8b868a329138f580f4ce70c71c8734f600ea2b7f3af99ccaede5e1ed57b019001fb1928b313f18b00bca97fcbacbef24c57b0151
   languageName: node
   linkType: hard
 
@@ -787,7 +787,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "benjaminarski@workspace:."
   dependencies:
-    "@next/font": 13.4.2
+    "@next/font": 13.4.6
     "@react-spring/web": 9.7.2
     "@types/node": 18.16.9
     "@types/react": 18.2.6
