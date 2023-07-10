@@ -388,10 +388,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.16.9":
-  version: 18.16.9
-  resolution: "@types/node@npm:18.16.9"
-  checksum: 7fe0ef372ba8b157bd646efe29b0ece92ccb9f455171a7ceb4c92d6b490789ff0f14411b1dc6ad203351a0efa2b435072dfab5566fb6eaaaa5cd549e1fb22afa
+"@types/node@npm:20.4.1":
+  version: 20.4.1
+  resolution: "@types/node@npm:20.4.1"
+  checksum: 22cbcc792f2eb636fe4188778ed0f32658ab872aa7fcb9847b3fa289a42b14b9f5e30c6faec50ef3c7adbc6c2a246926e5858136bb8b10c035a3fcaa6afbeed2
   languageName: node
   linkType: hard
 
@@ -789,7 +789,7 @@ __metadata:
   dependencies:
     "@next/font": 13.4.2
     "@react-spring/web": 9.7.2
-    "@types/node": 18.16.9
+    "@types/node": 20.4.1
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
     autoprefixer: 10.4.14
